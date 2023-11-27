@@ -8,8 +8,6 @@ public class CollisionFinish : MonoBehaviour
     void OnTriggerEnter(Collider others)
     {
         if (others.gameObject.CompareTag("Finishh"))
-        {
             camaraGO.SetActive(true);
-        }
     }
 }

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 412767307607103441}
   - component: {fileID: 8566911054100436745}
   - component: {fileID: 2003146082217700065}
-  - component: {fileID: 1652757622517745766}
   - component: {fileID: 4193316692614457149}
   - component: {fileID: 7316705476708817169}
   - component: {fileID: -1208331456768771168}
@@ -114,20 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb9e1e67d460534a8aab56fe925fe66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1652757622517745766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4201019686007754125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04129120e2beaeb4591b0ad9230a9ae2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textoMonedas: {fileID: 0}
-  textoGolpes: {fileID: 0}
 --- !u!114 &4193316692614457149
 MonoBehaviour:
   m_ObjectHideFlags: 0

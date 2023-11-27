@@ -23,7 +23,6 @@ public class ScoreCounter : MonoBehaviour
         }
     }
 
-
     void OnTriggerEnter (Collider others)
     {
         if(others.gameObject.CompareTag("Moneda"))
@@ -35,9 +34,7 @@ public class ScoreCounter : MonoBehaviour
         else
         {
             if(others.gameObject.CompareTag("Finishh"))
-            {
                 camaraGO.SetActive(true);
-            }
             else
             {
                 golpes++;
@@ -47,11 +44,9 @@ public class ScoreCounter : MonoBehaviour
         }
     }
 
-
     public void UpdateScoreG()
     {
-        textoGolpes.text = golpes.ToString();
-        
+        textoGolpes.text = golpes.ToString();  
     }
 
     public void UpdateScoreM()

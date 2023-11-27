@@ -10,8 +10,8 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI textoMonedas;
     [SerializeField] TextMeshProUGUI textoGolpes;
 
-    int golpes;
-    int moneda;
+    public int golpes;
+    public int moneda;
 
     void Awake()
     {

@@ -11,9 +11,5 @@ public class CollisionWithCoints : MonoBehaviour
             ScoreManager.obj.UpdateScoreM();
             Destroy(others.gameObject);
         }
-        else
-        {
-            ScoreManager.obj.UpdateScoreG();
-        }
     }
 }
