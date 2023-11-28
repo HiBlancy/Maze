@@ -16,17 +16,16 @@ public class ScoreCounter : MonoBehaviour
 
     void OnCollisionEnter (Collision other)
     {
-        if(other.gameObject.tag != "Suelo" && other.gameObject.tag != "Finishh")
+        if(!other.gameObject.CompareTag("Suelo") && !other.gameObject.CompareTag("Finishh"))
         {
         golpes++;
         UpdateScoreG();
         }
     }
 
-
     void OnTriggerEnter (Collider others)
     {
-        if(others.gameObject.tag == "Moneda")
+        if(others.gameObject.CompareTag("Moneda"))
         {
             moneda++;
             Destroy(others.gameObject);
@@ -34,10 +33,8 @@ public class ScoreCounter : MonoBehaviour
         }
         else
         {
-            if(others.gameObject.tag == "Finishh")
-            {
+            if(others.gameObject.CompareTag("Finishh"))
                 camaraGO.SetActive(true);
-            }
             else
             {
                 golpes++;
@@ -47,11 +44,9 @@ public class ScoreCounter : MonoBehaviour
         }
     }
 
-
     public void UpdateScoreG()
     {
-        textoGolpes.text = golpes.ToString();
-        
+        textoGolpes.text = golpes.ToString();  
     }
 
     public void UpdateScoreM()

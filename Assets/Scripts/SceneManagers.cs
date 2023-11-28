@@ -15,7 +15,7 @@ public class SceneManagers : MonoBehaviour
         SceneManager.LoadScene("Inicio");
     }
 
-        public void ClosePressed()
+    public void ClosePressed()
     {
         Application.Quit();
     }

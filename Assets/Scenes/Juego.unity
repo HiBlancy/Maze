@@ -2711,6 +2711,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
+    - target: {fileID: 4193316692614457149, guid: 7120d3cf159a51a4ea8b98baf98beaa7, type: 3}
+      propertyPath: camaraGO
+      value: 
+      objectReference: {fileID: 571743075}
     - target: {fileID: 4201019686007754125, guid: 7120d3cf159a51a4ea8b98baf98beaa7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3091,12 +3095,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 571743075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 868f8b309ecfb5e44bca1f9c9594b286, type: 3}
+  m_Script: {fileID: 11500000, guid: a1633ce5cfec2c149b9b9d8eaf834733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textoMonedass: {fileID: 1284144151}
   textoGolpess: {fileID: 1989715782}
-  puntuacionesFinales: {fileID: 734664349}
 --- !u!1 &580962823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3540,17 +3543,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d74f1af8ce4c8654893a4b3d0ba494e9, type: 3}
---- !u!114 &734664349 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7761374794681131408, guid: 7120d3cf159a51a4ea8b98baf98beaa7, type: 3}
-  m_PrefabInstance: {fileID: 547451952}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ee3d7d0358291f4ea4c9e045233ccc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &755165747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8536630141845353869, guid: d74f1af8ce4c8654893a4b3d0ba494e9, type: 3}
@@ -3810,6 +3802,7 @@ GameObject:
   - component: {fileID: 855732833}
   - component: {fileID: 855732832}
   - component: {fileID: 855732831}
+  - component: {fileID: 855732835}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3900,6 +3893,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &855732835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855732830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04129120e2beaeb4591b0ad9230a9ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoMonedas: {fileID: 211939383}
+  textoGolpes: {fileID: 563582690}
+  golpes: 0
+  moneda: 0
 --- !u!1001 &880740118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4168,7 +4177,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
@@ -4177,14 +4185,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
