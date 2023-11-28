@@ -20,6 +20,7 @@ public class ScoreManager : MonoBehaviour
         else
             obj = this;
     }
+
     public void UpdateScoreG()
     {
         golpes++;
@@ -30,5 +31,9 @@ public class ScoreManager : MonoBehaviour
     {
         moneda++;
         textoMonedas.text = moneda.ToString();
+
+        //Ejemplo
+        Sonido sonido1 = new RecogerMoneda();
+        sonido1.HacerSonido();
     }
 }
